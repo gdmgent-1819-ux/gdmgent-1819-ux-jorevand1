@@ -1,9 +1,41 @@
-html {
-  height: 100%;
+@font-face {
+    font-family: 'snell-regular';
+    src: url('../fonts/SnellBT-Regular.woff2') format('woff2'),
+        url('../fonts/SnellBT-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
 }
 
-body {
-  font-family: var(--t-body);
-  height: inherit;
-  margin: 0;
+@font-face {
+    font-family: 'snell-boldscript';
+    src: url('../fonts/SnellRoundhand-BoldScript.woff2') format('woff2'),
+        url('../fonts/SnellRoundhand-BoldScript.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'snell-bold';
+    src: url('../fonts/SnellBT-Bold.woff2') format('woff2'),
+        url('../fonts/SnellBT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'snell-blackscript';
+    src: url('../fonts/SnellRoundhand-BlackScript.woff2') format('woff2'),
+        url('../fonts/SnellRoundhand-BlackScript.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+html{
+
+}
+body{
+    background-color: var(--color-white);
+    font-family: var(--f-body);
+}
+.bolder{
+    font-weight: bolder;
 }

@@ -1,26 +1,12 @@
-
 :root {
-  /**
-   * Colour palette
-   */
-  --c-primary: hsl(190, 100%, 40%);
+	/** Colors */
+	--color-purple: hsl(328, 29%, 43%);
+	--color-blue: hsl(191, 57%, 88%);
+	--color-white: #FFF;
+	--font-body: 'Roboto';
+	--unit: 0.9375rem;
 
-  /**
-   * Layout
-   */
-  --l-gutter: 1rem;
-
-  /**
-   * Typography
-   */
-  --t-primary: Arial, Helvetica, sans-serif;
-  --t-secondary: Arial, Helvetica, sans-serif;
-  --t-tertiary: monospace;
-
-  --t-headline: var(--t-primary);
-  --t-subtitle: var(--t-primary);
-  --t-body: var(--t-secondary);
-  --t-code: var(--t-tertiary);
+	/** Fonts */
+	--f-body: 'Roboto', sans-serif;
+	--f-title: ''
 }
-
-

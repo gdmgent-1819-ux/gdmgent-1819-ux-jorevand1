@@ -1,9 +1,379 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 @import url('variables.css');
 @import url('base.css');
-
-@import url('components/flex-grid.css');
-@import url('components/buttons.css');
 @import url('components/forms.css');
+@import url('components/grid.css');
 
+
+/*-- PAGE HEADER --*/
+.titlesection{
+	background-color: var(--color-blue);
+}
+.col-3{
+	background-color: var(--color-purple);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+h1{ /* bistrotitle */
+	transform: rotate(-90deg);
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  padding: 0;
+  margin-right: -157px;
+  margin-top: 10px;
+	font-size: 112px;
+	color: var(--color-blue);
+	font-weight: bolder;
+}
+.col-9 .titlesection{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0px 50px 0px;
+}
+.col-9 img{
+	width: 600px;
+}
+
+
+
+/*-- NAVIGATION --*/
+nav {
+	background-color: var(--color-white);
+	color: var(--color-blue);
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+
+}
+nav a {
+	text-decoration: none;
+	color: var(--color-blue);
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+nav a:hover{
+	color: var(--color-purple);
+}
+nav a:active{
+	color: var(--color-purple);
+}
+.active{
+	color: var(--color-purple);
+}
+
+/*-- MAIN --*/
+
+	/*-- ABOUT --*/
+	.page-about{
+	background-image: url(../images/about_header.png);
+	background-size: cover;
+	text-align: center;
+	color: var(--color-purple);
+	padding-bottom: 20px;
+	margin-top: -65px;
+
+	}
+	h2{
+		font-size: 75px;
+		padding-top: 50px;
+		margin-bottom: -20px;
+		color: var(--color-purple);
+
+	}
+	.page-about p{
+		width: 55%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 50px;
+	}
+
+	/*-- OPEN --*/
+	.page-open {
+		display: flex;
+		justify-content: space-around;
+
+	}
+	.page-open h2{
+		padding-left: 70px;
+	}
+	.page-open ul {
+		color: var(--color-purple);
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		padding-left: 75px;
+	}
+	.page-open ul li{
+		margin: -10px 0 -10px 0;
+	}
+	.col-6:first-child{
+		background-color: var(--color-blue);
+		width: 500px;
+		height: 600px;
+	}
+	.col-6:last-child img{
+		width: 500px;
+
+	}
+	/*-- PAGE FOOTER --*/
+	.page-footer{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		color:white;
+		margin-top: -70px;
+	}
+	.page-footer .imgcontainer{
+		width: 200px;
+		height: auto;
+	}
+	.page-footer img{
+		width: 30%;
+		height: auto;
+	}
+	.page-footer p{
+		padding-right: 50px;
+	}
+/*-- RESPONSIVE --*/
+@media (min-width: 2000px){
+	.col-9 img{
+		width: 800px;
+	}
+
+}
+@media (min-width: 1000px){
+	/*--
+	/*-- TOP TITLE --*/
+
+	.col-9 img{
+		width: 400px;
+	}
+	h1{
+		font-size: 90px;
+		margin-right: -129px;
+  		margin-top: 7px;
+	}
+	/*-- OPENINGSUREN RESPONSIVE --*/
+
+	.col-6:last-child img{
+		width: 400px;
+	}
+	.col-6:first-child{
+		background-color: var(--color-blue);
+		width: 450px;
+		height: 590px;
+	}
+	.page-open ul{
+		font-size: 15px;	
+		padding-left: 30px;
+	}
+	.page-open h2{
+		padding-left: 30px;
+	}
+
+	/*-- FOOTER --*/
+	.page-footer .imgcontainer{
+		width: 200px;
+		height: auto;
+		padding-left: 20px;
+	}
+	.page-footer img{
+		width: 25%;
+		height: auto;
+		padding-left: 40px;	
+	}
+	.page-footer p{
+		padding-right: 55px;
+		font-size: 13px;
+	}
+
+}
+@media (min-width: 775px){
+	/*--
+	/*-- TOP TITLE --*/
+	
+	}
+	.col-9 img{
+		width: 300px;
+	}
+	h1{
+		font-size: 72px;
+		margin-right: -102px;
+  		margin-top: 2px;
+	}
+	nav ul a{
+		font-size: 20px;
+	}
+	/*-- OPENINGSUREN RESPONSIVE --*/
+
+	.col-6:last-child img{
+		width: 400px;
+	}
+	.col-6:first-child{
+		background-color: var(--color-blue);
+		width: 450px;
+		height: 590px;
+	}
+	.page-open ul{
+		font-size: 13px;	
+		padding-left: 25px;
+	}
+	.page-open h2{
+		padding-left: 25px;
+	}
+
+	/*-- FOOTER --*/
+	.page-footer .imgcontainer{
+		width: 200px;
+		height: auto;
+		padding-left: 20px;
+	}
+	.page-footer img{
+		width: 20%;
+		height: auto;
+		padding-left: 40px;	
+	}
+	.page-footer p{
+		padding-right: 55px;
+		font-size: 10px;
+	}
+
+@media (max-width: 675px){
+	/*--
+	/*-- TOP TITLE --*/
+	.page-header{
+		width: 100%;
+		height: 300px;
+
+	}
+	.container{
+		width: 100%;
+	}
+	.row{
+		background-color: var(--color-blue);
+		width: 100%;
+	}
+	.col-3{
+		display: none;
+	
+	}
+	h1{
+		display: none;
+	}
+	.titlesection{
+		display: block;
+		width: 100%;
+		padding: 0px 0px 0px 0px;
+	}
+	.col-9{
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+	.col-9 img{
+		width: 45%;
+		padding-bottom: -20px;
+		margin-top: -2Opx;
+	}
+	nav{
+		padding-top: 0;
+		background-color: var(--color-blue);
+	}
+	nav ul {
+		padding: 0;
+	}
+	nav ul a{
+		padding: 0;
+		font-size: 20px;
+		color: white;
+	}
+	h2{
+		font-size: 40px;
+		padding-bottom: 20px;
+	}
+
+	/*-- ABOUT -- */
+	.page-about{
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		padding-bottom: -20px;
+
+	}
+	
+	/*-- OPENINGSUREN RESPONSIVE --*/
+
+	.col-6:last-child img{
+		width: 400px;
+	}
+	.col-6:first-child{
+		background-color: var(--color-purple);
+		width: 100%;
+		height: 290px;
+	}
+	.page-open ul{
+		font-size: 13px;	
+		padding: 0;
+		text-align: center;
+		color: var(--color-white);
+
+	}
+	.page-open h2{
+		padding: 0 0 20px 0;
+		text-align: center;
+		color: var(--color-white);
+
+	}
+	.page-open img{
+		display: none;
+	}
+
+	/*-- FOOTER --*/
+	.page-footer{
+		display: block;
+	}
+	.page-footer .imgcontainer{
+		width: 200px;
+		height: auto;
+		padding-left: 20px;
+		display: none;
+	}
+	.page-footer img{
+		width: 20%;
+		height: auto;
+		display: none;
+	}
+	.page-footer p{
+		font-size: 10px;
+		color: var(--color-white);
+		text-align: center;
+		padding-top: 20px;
+		padding-left: 50px;
+	}
+
+}
